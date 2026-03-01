@@ -105,9 +105,6 @@ header {
     width: 487px;
     height: 437px;
   }
-  text {
-    font-size: 15px;
-  }
 }
 @media (max-width: 900px) {
   .sitenav-icon a img {
@@ -118,6 +115,9 @@ header {
     width: 160px;
     height: 75px;
   }
+  text {
+    font-size: 15px;
+  }
   .title {
     font-size: 60px;
   }
@@ -127,14 +127,11 @@ header {
   }
 }
 @media (max-width: 768px) {
-  .sitnavlink {
+  .sitnav-link {
     display: none;
   }
   .about-img img {
     display: none;
-  }
-  .about {
-    padding:;
   }
 }
 
@@ -142,9 +139,24 @@ header {
   header {
     background-image: url("../img/png/header-bg.png");
   }
-
+  .about-img2 {
+    display: flex;
+    width: 349px;
+    height: 313px;
+  }
   .sitenav-icon {
     gap: 10px;
+  }
+  .about-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
@@ -153,10 +165,10 @@ header {
     font-size: 30px;
   }
 
-  .about-img2 {
+  .about-conteiner {
     display: flex;
-    width: 300px;
-    height: 200px;
+    align-items: center;
+    flex-direction: column;
   }
 }
 /* main  */
@@ -196,4 +208,46 @@ header {
 }
 .about-img2 {
   display: none;
+}
+/* section */
+.features-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features {
+  background-color: #3d210c;
+  color: #fff4d8;
+  padding: 89px 0;
+  text-align: center;
+  align-items: center;
+}
+.features-conteiner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.features-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+.text2 {
+  font-family: "Rubik", sans-serif;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+  font-size: 15px;
+  width: 227px;
+}
+.shop {
+  padding-bottom: 35px;
+}
+.section2 {
+  font-family: "Rubik", sans-serif;
+  line-height: 40px;
+  font-size: 30px;
+  letter-spacing: -0.33px;
+  padding-bottom: 15px;
 }
